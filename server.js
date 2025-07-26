@@ -7,7 +7,8 @@ const cors = require("cors");
 
 const app = express();
 app.use(cors({
-  origin: "https://auth-app-front-pied.vercel.app/"
+  origin: "https://auth-app-front-pied.vercel.app/",
+   credentials: true 
 }));
 app.use(express.json());
 
